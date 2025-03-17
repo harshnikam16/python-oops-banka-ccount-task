@@ -72,3 +72,19 @@ class BankAccount:
     @staticmethod
     def validate_amount(amount):
         return amount > 0
+
+
+acc1 = BankAccount("Harsh","Savings",10000)
+acc2 = BankAccount("Ram","Current",11000)
+acc3 = BankAccount("Shiv","Savings",18900)
+acc4 = BankAccount("Savings",18900)
+
+acc1.deposit(102)
+acc2.withdraw(10000)
+acc1.transfer(acc2,3000)
+acc1.check_balance()
+acc2.check_balance()
+acc1.get_transaction_history()
+BankAccount.get_total_accounts()
+acc3.check_balance()
+acc1.deposit(50000)
